@@ -8,12 +8,10 @@
 <br/>
 
 ## 功能和特点
-
- &nbsp;&nbsp;&nbsp;&nbsp;** 灵活 ** 此路由作为一个独立消息通道可以完全自己控制跳转方式 <br>
- &nbsp;&nbsp;&nbsp;&nbsp;** 简单 ** 使用非常简单，配置好后，其他页面复制即可<br>
- &nbsp;&nbsp;&nbsp;&nbsp;** 不耦合 ** 不影响控制器原有功能等，可用可不用
-
-
+ <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; **灵活** 此路由作为一个独立消息通道可以完全自己控制跳转方式 <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; **简单** 使用非常简单，配置好后，其他页面复制即可<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; **不耦合** 不影响控制器原有功能等，可用可不用 <br>
 ## 使用
 
 ### 在控制器实现路由协议
@@ -71,7 +69,7 @@ someView.bindRouter = @"router://TestViewController0?routerType=push&userId=1234
 
 ## 安装
 ```
-pod 'TFRequest'
+pod 'TFRouter'
 
 ```
 
