@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		907E01F324C6778600A8DAEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E01F224C6778600A8DAEE /* AppDelegate.m */; };
+		907E01F924C6778600A8DAEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E01F824C6778600A8DAEE /* ViewController.m */; };
+		907E01FC24C6778600A8DAEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907E01FA24C6778600A8DAEE /* Main.storyboard */; };
+		907E01FE24C6778700A8DAEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907E01FD24C6778700A8DAEE /* Assets.xcassets */; };
+		907E020124C6778700A8DAEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907E01FF24C6778700A8DAEE /* LaunchScreen.storyboard */; };
+		907E020424C6778700A8DAEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E020324C6778700A8DAEE /* main.m */; };
+		907E021724C6C72300A8DAEE /* RouterUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E020C24C6C72300A8DAEE /* RouterUnit.m */; };
+		907E021824C6C72300A8DAEE /* TFRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E021124C6C72300A8DAEE /* TFRouter.m */; };
+		907E021924C6C72300A8DAEE /* NSDictionary+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E021224C6C72300A8DAEE /* NSDictionary+Router.m */; };
+		907E021A24C6C72300A8DAEE /* UIView+BindRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E021424C6C72300A8DAEE /* UIView+BindRouter.m */; };
+		907E021B24C6C72300A8DAEE /* RouterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E021524C6C72300A8DAEE /* RouterModel.m */; };
+		907E021C24C6C72300A8DAEE /* NSArray+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E021624C6C72300A8DAEE /* NSArray+Router.m */; };
+		907E022024C6D4A500A8DAEE /* TestViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E021E24C6D4A500A8DAEE /* TestViewController0.m */; };
+		907E022124C6D4A500A8DAEE /* TestViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907E021F24C6D4A500A8DAEE /* TestViewController0.xib */; };
+		907E022A24C71F5200A8DAEE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E022824C71F5200A8DAEE /* MainViewController.m */; };
+		907E022B24C71F5200A8DAEE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907E022924C71F5200A8DAEE /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		907E01EE24C6778600A8DAEE /* TFRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		907E01F124C6778600A8DAEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		907E01F224C6778600A8DAEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		907E01F724C6778600A8DAEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		907E01F824C6778600A8DAEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		907E01FB24C6778600A8DAEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		907E01FD24C6778700A8DAEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		907E020024C6778700A8DAEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		907E020224C6778700A8DAEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907E020324C6778700A8DAEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		907E020B24C6C72300A8DAEE /* TFRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRouter.h; sourceTree = "<group>"; };
+		907E020C24C6C72300A8DAEE /* RouterUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterUnit.m; sourceTree = "<group>"; };
+		907E020D24C6C72300A8DAEE /* NSDictionary+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Router.h"; sourceTree = "<group>"; };
+		907E020E24C6C72300A8DAEE /* UIView+BindRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BindRouter.h"; sourceTree = "<group>"; };
+		907E020F24C6C72300A8DAEE /* NSArray+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Router.h"; sourceTree = "<group>"; };
+		907E021024C6C72300A8DAEE /* RouterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterModel.h; sourceTree = "<group>"; };
+		907E021124C6C72300A8DAEE /* TFRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRouter.m; sourceTree = "<group>"; };
+		907E021224C6C72300A8DAEE /* NSDictionary+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Router.m"; sourceTree = "<group>"; };
+		907E021324C6C72300A8DAEE /* RouterUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterUnit.h; sourceTree = "<group>"; };
+		907E021424C6C72300A8DAEE /* UIView+BindRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BindRouter.m"; sourceTree = "<group>"; };
+		907E021524C6C72300A8DAEE /* RouterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterModel.m; sourceTree = "<group>"; };
+		907E021624C6C72300A8DAEE /* NSArray+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Router.m"; sourceTree = "<group>"; };
+		907E021D24C6D4A500A8DAEE /* TestViewController0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController0.h; sourceTree = "<group>"; };
+		907E021E24C6D4A500A8DAEE /* TestViewController0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController0.m; sourceTree = "<group>"; };
+		907E021F24C6D4A500A8DAEE /* TestViewController0.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController0.xib; sourceTree = "<group>"; };
+		907E022724C71F5200A8DAEE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		907E022824C71F5200A8DAEE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		907E022924C71F5200A8DAEE /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		907E01EB24C6778600A8DAEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		907E01E524C6778600A8DAEE = {
+			isa = PBXGroup;
+			children = (
+				907E01F024C6778600A8DAEE /* TFRouterDemo */,
+				907E01EF24C6778600A8DAEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		907E01EF24C6778600A8DAEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				907E01EE24C6778600A8DAEE /* TFRouterDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		907E01F024C6778600A8DAEE /* TFRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				907E01F124C6778600A8DAEE /* AppDelegate.h */,
+				907E01F224C6778600A8DAEE /* AppDelegate.m */,
+				907E01F724C6778600A8DAEE /* ViewController.h */,
+				907E01F824C6778600A8DAEE /* ViewController.m */,
+				907E022724C71F5200A8DAEE /* MainViewController.h */,
+				907E022824C71F5200A8DAEE /* MainViewController.m */,
+				907E022924C71F5200A8DAEE /* MainViewController.xib */,
+				907E021D24C6D4A500A8DAEE /* TestViewController0.h */,
+				907E021E24C6D4A500A8DAEE /* TestViewController0.m */,
+				907E021F24C6D4A500A8DAEE /* TestViewController0.xib */,
+				907E020A24C6C72300A8DAEE /* TFRouter */,
+				907E01FA24C6778600A8DAEE /* Main.storyboard */,
+				907E01FD24C6778700A8DAEE /* Assets.xcassets */,
+				907E01FF24C6778700A8DAEE /* LaunchScreen.storyboard */,
+				907E020224C6778700A8DAEE /* Info.plist */,
+				907E020324C6778700A8DAEE /* main.m */,
+			);
+			path = TFRouterDemo;
+			sourceTree = "<group>";
+		};
+		907E020A24C6C72300A8DAEE /* TFRouter */ = {
+			isa = PBXGroup;
+			children = (
+				907E020F24C6C72300A8DAEE /* NSArray+Router.h */,
+				907E021624C6C72300A8DAEE /* NSArray+Router.m */,
+				907E020D24C6C72300A8DAEE /* NSDictionary+Router.h */,
+				907E021224C6C72300A8DAEE /* NSDictionary+Router.m */,
+				907E021024C6C72300A8DAEE /* RouterModel.h */,
+				907E021524C6C72300A8DAEE /* RouterModel.m */,
+				907E021324C6C72300A8DAEE /* RouterUnit.h */,
+				907E020C24C6C72300A8DAEE /* RouterUnit.m */,
+				907E020B24C6C72300A8DAEE /* TFRouter.h */,
+				907E021124C6C72300A8DAEE /* TFRouter.m */,
+				907E020E24C6C72300A8DAEE /* UIView+BindRouter.h */,
+				907E021424C6C72300A8DAEE /* UIView+BindRouter.m */,
+			);
+			name = TFRouter;
+			path = ../../TFRouter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		907E01ED24C6778600A8DAEE /* TFRouterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907E020724C6778700A8DAEE /* Build configuration list for PBXNativeTarget "TFRouterDemo" */;
+			buildPhases = (
+				907E01EA24C6778600A8DAEE /* Sources */,
+				907E01EB24C6778600A8DAEE /* Frameworks */,
+				907E01EC24C6778600A8DAEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFRouterDemo;
+			productName = TFRouterDemo;
+			productReference = 907E01EE24C6778600A8DAEE /* TFRouterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		907E01E624C6778600A8DAEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = ioser;
+				TargetAttributes = {
+					907E01ED24C6778600A8DAEE = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 907E01E924C6778600A8DAEE /* Build configuration list for PBXProject "TFRouterDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 907E01E524C6778600A8DAEE;
+			productRefGroup = 907E01EF24C6778600A8DAEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				907E01ED24C6778600A8DAEE /* TFRouterDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		907E01EC24C6778600A8DAEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907E020124C6778700A8DAEE /* LaunchScreen.storyboard in Resources */,
+				907E01FE24C6778700A8DAEE /* Assets.xcassets in Resources */,
+				907E022B24C71F5200A8DAEE /* MainViewController.xib in Resources */,
+				907E01FC24C6778600A8DAEE /* Main.storyboard in Resources */,
+				907E022124C6D4A500A8DAEE /* TestViewController0.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		907E01EA24C6778600A8DAEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907E022A24C71F5200A8DAEE /* MainViewController.m in Sources */,
+				907E021A24C6C72300A8DAEE /* UIView+BindRouter.m in Sources */,
+				907E021B24C6C72300A8DAEE /* RouterModel.m in Sources */,
+				907E01F924C6778600A8DAEE /* ViewController.m in Sources */,
+				907E021C24C6C72300A8DAEE /* NSArray+Router.m in Sources */,
+				907E01F324C6778600A8DAEE /* AppDelegate.m in Sources */,
+				907E021924C6C72300A8DAEE /* NSDictionary+Router.m in Sources */,
+				907E020424C6778700A8DAEE /* main.m in Sources */,
+				907E021724C6C72300A8DAEE /* RouterUnit.m in Sources */,
+				907E021824C6C72300A8DAEE /* TFRouter.m in Sources */,
+				907E022024C6D4A500A8DAEE /* TestViewController0.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		907E01FA24C6778600A8DAEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				907E01FB24C6778600A8DAEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		907E01FF24C6778700A8DAEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				907E020024C6778700A8DAEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		907E020524C6778700A8DAEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		907E020624C6778700A8DAEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		907E020824C6778700A8DAEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TFRouterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ioser.TFRouterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		907E020924C6778700A8DAEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TFRouterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ioser.TFRouterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		907E01E924C6778600A8DAEE /* Build configuration list for PBXProject "TFRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907E020524C6778700A8DAEE /* Debug */,
+				907E020624C6778700A8DAEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907E020724C6778700A8DAEE /* Build configuration list for PBXNativeTarget "TFRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907E020824C6778700A8DAEE /* Debug */,
+				907E020924C6778700A8DAEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 907E01E624C6778600A8DAEE /* Project object */;
+}
