@@ -7,6 +7,17 @@
 [![Platform iOS](https://img.shields.io/badge/platform-iOS-grayblue)]()&nbsp;
 <br/>
 
+## 效果示例
+
+___
+
+<div>
+<img src="https://github.com/shmxybfq/TFRouter/blob/master/Example/router_demo0.gif" width="46%" height="46%">
+<img src="https://github.com/shmxybfq/TFRouter/blob/master/Example/router_demo1.gif" width="46%" height="46%">
+</div>
+<br>
+
+
 ## 功能和特点
  
  **灵活** 此路由作为一个独立消息通道可以完全自己控制跳转方式 <br>
