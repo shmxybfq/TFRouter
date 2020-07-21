@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "TFRouter.h"
 @interface MainViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *bindRouterButton;
 
 @end
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"路由";
+    
+    self.bindRouterButton.bindRouter = @"router://TestViewController0?routerType=push&userId=1234567890";
 }
 
 /*
@@ -44,5 +47,6 @@
     [TFRouter routerTo:@"http://www.baidu.com"];
 
 }
+
 
 @end

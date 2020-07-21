@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="bindRouterButton" destination="RQ3-wQ-9kK" id="caY-gb-hpt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -45,16 +46,31 @@
                         <action selector="other:" destination="-1" eventType="touchUpInside" id="dQg-iW-aEB"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZx-eY-Gr6">
+                    <rect key="frame" x="120.5" y="324" width="173" height="30"/>
+                    <state key="normal" title="UI组件绑定路由-&gt;xib绑定"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="bindRouter" value="router://TestViewController0?routerType=push&amp;userId=1234567890"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQ3-wQ-9kK">
+                    <rect key="frame" x="115" y="364" width="184" height="30"/>
+                    <state key="normal" title="UI组件绑定路由-&gt;代码绑定"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="AAl-aE-Ixs" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="5pU-RL-H36"/>
                 <constraint firstItem="qX5-8k-IoQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NPu-89-FKR"/>
+                <constraint firstItem="HZx-eY-Gr6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Y9S-R4-kgI"/>
                 <constraint firstItem="lS6-kh-En8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="d99-vE-91K"/>
+                <constraint firstItem="RQ3-wQ-9kK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f93-ro-9zU"/>
                 <constraint firstItem="AAl-aE-Ixs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jbK-Ou-5bj"/>
                 <constraint firstItem="pph-Ig-bqh" firstAttribute="top" secondItem="AAl-aE-Ixs" secondAttribute="bottom" constant="10" id="lkp-BF-oNO"/>
+                <constraint firstItem="RQ3-wQ-9kK" firstAttribute="top" secondItem="HZx-eY-Gr6" secondAttribute="bottom" constant="10" id="ryi-MQ-xCi"/>
                 <constraint firstItem="qX5-8k-IoQ" firstAttribute="top" secondItem="pph-Ig-bqh" secondAttribute="bottom" constant="10" id="tBw-RT-xRd"/>
                 <constraint firstItem="pph-Ig-bqh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vsq-ih-Lgt"/>
+                <constraint firstItem="HZx-eY-Gr6" firstAttribute="top" secondItem="lS6-kh-En8" secondAttribute="bottom" constant="50" id="wzT-Hx-sug"/>
                 <constraint firstItem="lS6-kh-En8" firstAttribute="top" secondItem="qX5-8k-IoQ" secondAttribute="bottom" constant="10" id="xj6-xt-DL5"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
