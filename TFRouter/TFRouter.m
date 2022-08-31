@@ -40,6 +40,20 @@ static TFRouter *_router;
     return [[TFRouter shareInstance]routerTo:url];
 }
 
++(NSError *)routerTo:(NSString *)url obs:(RouterObserverBlock)obs{
+    return [[TFRouter shareInstance]routerTo:url obs:obs];
+}
+
++(NSError *)routerTo:(NSString *)url param:(NSDictionary *)param{
+    NSString *prm = [param toRouterParam];
+    [TFRouter routerTo:[NSString stringWithFormat:@"%@?%@",url,prm]];
+}
+
++(NSError *)routerTo:(NSString *)url param:(NSDictionary *)param obs:(RouterObserverBlock)obs{
+    NSString *prm = [param toRouterParam];
+    [TFRouter routerTo:[NSString stringWithFormat:@"%@?%@",url,prm] obs:obs];
+}
+
 +(void)setRouterResultDeleget:(id<RouterResultDelegate>)delegate{
     [TFRouter shareInstance].delegate = delegate;
 }
@@ -90,6 +104,10 @@ static TFRouter *_router;
 }
 
 -(NSError *)routerTo:(NSString *)url{
+    [self routerTo:url obs:nil];
+}
+
+-(NSError *)routerTo:(NSString *)url obs:(RouterObserverBlock)obs {
     if (!self.inited) {
         int count = objc_getClassList(NULL,0);
         Class *classes = (Class *)malloc(sizeof(Class) * count);
@@ -141,6 +159,9 @@ static TFRouter *_router;
             model.param = nil;
             model.protocol = nil;
             model.controller = nil;
+            if (obs) {
+                obs(model);
+            }
             [self routerResultPre:model];
         }
     }else if(url && [url hasPrefix:@"router"]){
@@ -164,6 +185,9 @@ static TFRouter *_router;
                     model.param = param;
                     model.protocol = [TFRouter parseProtocolFromUrl:url];
                     model.controller = controller;
+                    if (obs) {
+                        obs(model);
+                    }
                     [self routerResultPre:model];
                 }else{
 #ifdef DEBUG

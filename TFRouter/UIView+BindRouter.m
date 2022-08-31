@@ -15,7 +15,7 @@
 
 @dynamic bindRouter,bindRouterTapGes,tapBlock;
 
--(void)tapAction:(BindViewTapGesActionBlock)tapBlock{
+-(void)routerTapAction:(BindViewTapGesActionBlock)tapBlock{
     self.tapBlock = tapBlock;
 }
 

@@ -18,7 +18,7 @@ typedef void(^BindViewTapGesActionBlock)(UITapGestureRecognizer *tapGes);
 @property(nonatomic, strong) UITapGestureRecognizer *bindRouterTapGes;
 @property(nonatomic,   copy) BindViewTapGesActionBlock tapBlock;
 
--(void)tapAction:(BindViewTapGesActionBlock)tapBlock;
+-(void)routerTapAction:(BindViewTapGesActionBlock)tapBlock;
 
 @end
 

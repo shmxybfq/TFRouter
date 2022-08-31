@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-
+@class RouterModel;
 typedef NS_ENUM(NSInteger,RouterType) {
     RouterTypeWap = 0,
     RouterTypeLocal,
 };
-
+typedef void(^RouterObserverBlock)(RouterModel *model);
 
 @interface RouterModel : NSObject
 

@@ -38,6 +38,10 @@
 
 //路由到某url
 +(NSError *)routerTo:(NSString *)url;
++(NSError *)routerTo:(NSString *)url obs:(RouterObserverBlock)obs;
++(NSError *)routerTo:(NSString *)url param:(NSDictionary *)param;
++(NSError *)routerTo:(NSString *)url param:(NSDictionary *)param obs:(RouterObserverBlock)obs;
+//设置路由结果代理
 //设置路由结果代理
 +(void)setRouterResultDeleget:(id<RouterResultDelegate>)delegate;
 
