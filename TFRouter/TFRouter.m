@@ -46,12 +46,12 @@ static TFRouter *_router;
 
 +(NSError *)routerTo:(NSString *)url param:(NSDictionary *)param{
     NSString *prm = [param toRouterParam];
-    [TFRouter routerTo:[NSString stringWithFormat:@"%@?%@",url,prm]];
+    return [TFRouter routerTo:[NSString stringWithFormat:@"%@?%@",url,prm]];
 }
 
 +(NSError *)routerTo:(NSString *)url param:(NSDictionary *)param obs:(RouterObserverBlock)obs{
     NSString *prm = [param toRouterParam];
-    [TFRouter routerTo:[NSString stringWithFormat:@"%@?%@",url,prm] obs:obs];
+    return [TFRouter routerTo:[NSString stringWithFormat:@"%@?%@",url,prm] obs:obs];
 }
 
 +(void)setRouterResultDeleget:(id<RouterResultDelegate>)delegate{
@@ -104,7 +104,7 @@ static TFRouter *_router;
 }
 
 -(NSError *)routerTo:(NSString *)url{
-    [self routerTo:url obs:nil];
+    return [self routerTo:url obs:nil];
 }
 
 -(NSError *)routerTo:(NSString *)url obs:(RouterObserverBlock)obs {
