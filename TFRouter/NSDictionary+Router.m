@@ -7,7 +7,7 @@
 //
 
 #import "NSDictionary+Router.h"
-
+#import "NSArray+Router.h"
 @implementation NSDictionary (Router)
 
 -(NSString *)toRouterParam{
@@ -16,8 +16,17 @@
     NSMutableString *param = [NSMutableString string];
     for (int i = 0; i < allkeys.count; i++) {
         NSString *key = [allkeys objectAtIndex:i];
-        NSString *value = [NSString stringWithFormat:@"%@",[self objectForKey:key]];
-        [param appendFormat:@"%@=%@",key,value];
+        
+        id value = [self objectForKey:key];
+        if([value isKindOfClass:[NSArray class]]){
+            NSString *arrayJson = [((NSArray *)value) toJson];
+            [param appendFormat:@"%@=%@",key,arrayJson];
+        }else if([value isKindOfClass:[NSDictionary class]]){
+            NSString *dicJson = [((NSDictionary *)value) toJson];
+            [param appendFormat:@"%@=%@",key,dicJson];
+        }else {
+            [param appendFormat:@"%@=%@",key,value];
+        }
         if (i != allkeys.count - 1) {
             [param appendString:@"&"];
         }
