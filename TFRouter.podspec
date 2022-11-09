@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TFRouter"
-  s.version      = "1.2.2"
+  s.version      = "1.2.4"
   s.summary      = "a router development tool for iOS app"
   s.description  = <<-DESC
     a router development tool for iOS app
